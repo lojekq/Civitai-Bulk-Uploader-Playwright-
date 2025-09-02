@@ -59,7 +59,7 @@ In the opened window, complete Cloudflare/captcha and sign in. To finish either 
 
 2) **Smoke test** (1 file per post, detailed log, minimized window):
 ```powershell
-python civitai_bulk_uploader.py --dir "D:\civitai	o_upload" --group-by flat --post-size 1 --pause 2-4 --thumb-timeout 45 --publish-timeout 30 --debug --log-file "D:\civitai\debug_log.txt" --minimized
+python civitai_bulk_uploader.py --dir "D:\civitai\o_upload" --group-by flat --post-size 1 --pause 2-4 --thumb-timeout 45 --publish-timeout 30 --debug --log-file "D:\civitai\debug_log.txt" --minimized
 ```
 
 ---
@@ -68,7 +68,7 @@ python civitai_bulk_uploader.py --dir "D:\civitai	o_upload" --group-by flat --po
 
 ### Basic example
 ```powershell
-python civitai_bulk_uploader.py --dir "D:\civitai	o_upload" --group-by folder --post-size 20 --title-from folder --pause 4-8 --verbose --minimized
+python civitai_bulk_uploader.py --dir "D:\civitai\o_upload" --group-by folder --post-size 20 --title-from folder --pause 4-8 --verbose --minimized
 ```
 
 ### Key flags
@@ -95,22 +95,22 @@ python civitai_bulk_uploader.py --dir "D:\civitai	o_upload" --group-by folder --
 
 One file per post, logs and trace:
 ```powershell
-python civitai_bulk_uploader.py --dir "D:\civitai	o_upload" --group-by flat --post-size 1 --pause 2-4 --thumb-timeout 45 --publish-timeout 30 --debug --log-file "D:\civitai\debug_log.txt" --trace --minimized
+python civitai_bulk_uploader.py --dir "D:\civitai\o_upload" --group-by flat --post-size 1 --pause 2-4 --thumb-timeout 45 --publish-timeout 30 --debug --log-file "D:\civitai\debug_log.txt" --trace --minimized
 ```
 
 Per-folder posts, 10 images each, patient waits:
 ```powershell
-python civitai_bulk_uploader.py --dir "D:\civitai	o_upload" --group-by folder --post-size 10 --pause 4-8 --thumb-timeout 90 --publish-timeout 240 --verbose --minimized
+python civitai_bulk_uploader.py --dir "D:\civitai\o_upload" --group-by folder --post-size 10 --pause 4-8 --thumb-timeout 90 --publish-timeout 240 --verbose --minimized
 ```
 
 Dry run (no publish):
 ```powershell
-python civitai_bulk_uploader.py --dir "D:\civitai	o_upload" --group-by folder --post-size 5 --dry-run --verbose
+python civitai_bulk_uploader.py --dir "D:\civitai\o_upload" --group-by folder --post-size 5 --dry-run --verbose
 ```
 
 Disable dedupe (retesting same files):
 ```powershell
-python civitai_bulk_uploader.py --dir "D:\civitai	o_upload" --group-by folder --post-size 3 --skip-hashes --debug
+python civitai_bulk_uploader.py --dir "D:\civitai\o_upload" --group-by folder --post-size 3 --skip-hashes --debug
 ```
 
 ---
@@ -247,7 +247,7 @@ python civitai_bulk_uploader.py --login
 
 2) **Пробный запуск** (1 файл на пост, детальный лог, свёрнутое окно):
 ```powershell
-python civitai_bulk_uploader.py --dir "D:\civitai	o_upload" --group-by flat --post-size 1 --pause 2-4 --thumb-timeout 45 --publish-timeout 30 --debug --log-file "D:\civitai\debug_log.txt" --minimized
+python civitai_bulk_uploader.py --dir "D:\civitai\o_upload" --group-by flat --post-size 1 --pause 2-4 --thumb-timeout 45 --publish-timeout 30 --debug --log-file "D:\civitai\debug_log.txt" --minimized
 ```
 
 ---
@@ -256,7 +256,7 @@ python civitai_bulk_uploader.py --dir "D:\civitai	o_upload" --group-by flat --po
 
 ### Базовый пример
 ```powershell
-python civitai_bulk_uploader.py --dir "D:\civitai	o_upload" --group-by folder --post-size 20 --title-from folder --pause 4-8 --verbose --minimized
+python civitai_bulk_uploader.py --dir "D:\civitai\o_upload" --group-by folder --post-size 20 --title-from folder --pause 4-8 --verbose --minimized
 ```
 
 ### Ключевые параметры
@@ -283,22 +283,22 @@ python civitai_bulk_uploader.py --dir "D:\civitai	o_upload" --group-by folder --
 
 Один файл на пост, логи и трасса:
 ```powershell
-python civitai_bulk_uploader.py --dir "D:\civitai	o_upload" --group-by flat --post-size 1 --pause 2-4 --thumb-timeout 45 --publish-timeout 30 --debug --log-file "D:\civitai\debug_log.txt" --trace --minimized
+python civitai_bulk_uploader.py --dir "D:\civitai\o_upload" --group-by flat --post-size 1 --pause 2-4 --thumb-timeout 45 --publish-timeout 30 --debug --log-file "D:\civitai\debug_log.txt" --trace --minimized
 ```
 
 Посты по папкам, 10 изображений, спокойные паузы:
 ```powershell
-python civitai_bulk_uploader.py --dir "D:\civitai	o_upload" --group-by folder --post-size 10 --pause 4-8 --thumb-timeout 90 --publish-timeout 240 --verbose --minimized
+python civitai_bulk_uploader.py --dir "D:\civitai\o_upload" --group-by folder --post-size 10 --pause 4-8 --thumb-timeout 90 --publish-timeout 240 --verbose --minimized
 ```
 
 Черновой прогон без публикации:
 ```powershell
-python civitai_bulk_uploader.py --dir "D:\civitai	o_upload" --group-by folder --post-size 5 --dry-run --verbose
+python civitai_bulk_uploader.py --dir "D:\civitai\o_upload" --group-by folder --post-size 5 --dry-run --verbose
 ```
 
 Отключить дедуп (для повторных тестов тех же файлов):
 ```powershell
-python civitai_bulk_uploader.py --dir "D:\civitai	o_upload" --group-by folder --post-size 3 --skip-hashes --debug
+python civitai_bulk_uploader.py --dir "D:\civitai\o_upload" --group-by folder --post-size 3 --skip-hashes --debug
 ```
 
 ---
